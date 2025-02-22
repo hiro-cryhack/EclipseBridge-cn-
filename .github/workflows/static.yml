@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Eclipse Bridge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.0/dist/web3.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="script.js"></script>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container" style="border-radius: 0; border: 1px solid black; padding: 20px;">
+        <h1>测试网ECLIPSE BRIDGE</h1>
+        <form>
+            <divs>
+                <input style="width: 300px;" type="text" id="sender-eth-addr" placeholder="小狐狸钱包未连接" disabled>
+                <button style="float: right; color: black;" id="connect-button">connect</button>
+            </divs>
+
+            <input type="number" id="ether-amount" step="0.1" value="数量" placeholder="数量,建议桥0.1最好">
+            <input type="text" id="eclipse-wallet" placeholder="你的 eclipse wallet 地址">
+            <p>钱包必须先换到 ETHSepolia Testnet 链</p>
+            <button type="button" id="bridge-button" style="color: black;">确认</button>
+            <h6 class="dev-credit">制作: <a href="hiro">hiro</a></h6>
+            <h6 class="dev-credit">官方教程: <a href="https://docs.eclipse.builders/building-on-eclipse/wallet">点击</a></h6>
+            <h6 class="dev-credit">钱包下载: <a href="https://github.com/Eclipse-Laboratories-Inc/eclipse-wallet/releases/tag/v0.4.2-alpha">先点链接下载钱包，然后解压，进插件在开发者模式导入</a></h6>
+            <h6 class="dev-credit">生态: <a href="无">暂时没弄，后续补充</a></h6>
+            <h6 class="dev-credit">备注: <a href="无">鸭群福利，尽快跨，过几天我会更改代码，去混开发者嫖空投</a></h6>
+        </form>
+    </div>
+</body>
+</html>
